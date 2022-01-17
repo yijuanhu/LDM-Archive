@@ -13,9 +13,12 @@ Changes in Version 3.0
 2. Added an option for parallel computing (\texttt{n.cores} in \texttt{ldm} and \texttt{permanovaFL})
 3. Removed the options \texttt{test.global} and \texttt{test.otu} and always perform both global and OTU tests (one can set \texttt{n.perm.max=10000} if one is interested in the global tests only and wants to cap the permutation at 10000).
 
+Changes in Version 4.0
+1. Added an option for calling the new omnibus test, LDM-omni3 (Zhu et al. 2022), that combines results from analyzing three scales of taxon data: relative abundance, arcsin-root transformed relative-abundance, and presence-absence (test.omni3 in ldm)
+
 To install the package, download (preferrably the latest version of) the package from this site to a local drive and install and load the package in R:
 
-> install.packages("LDM_3.0.tar.gz", repos=NULL) 
+> install.packages("LDM_4.0.tar.gz", repos=NULL) 
 
 > library(LDM)
 
