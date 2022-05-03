@@ -16,9 +16,14 @@ Changes in Version 3.0
 Changes in Version 4.0
 1. Added an option for calling the new omnibus test, LDM-omni3 (Zhu et al. 2022), that combines results from analyzing three scales of taxon data: relative abundance, arcsin-root transformed relative-abundance, and presence-absence (test.omni3 in ldm)
 
+Changes in Version 5.0
+1. Added an option to take the second residual (e.g., the Martingale or deviance residuals obtained from a Cox proportional hazard model that fits the survival outcome and relevant covariates, and offered a combination test that combines the results of analyzing the first residual (specified as a covariate in the regression model) and the second residual (Hu et al. 2022) (other.surv.resid in both ldm and permanovaFL)
+2. Added an option for performing mediation analysis using PERMANOVA-med (Yue and Hu 2022, bioRxiv) (test.mediation in permanovaFL)
+3. Expanded permanovaFL to read multiple distance metrics/matrices to perform an omnibus test (dist.method or dist.list in permanovaFL)
+
 To install the package, download (preferrably the latest version of) the package from this site to a local drive and install and load the package in R:
 
-> install.packages("LDM_4.0.tar.gz", repos=NULL) 
+> install.packages("LDM_5.0.tar.gz", repos=NULL) 
 
 > library(LDM)
 
